@@ -37,59 +37,74 @@ PrepPilot serves as a valuable tool for anyone looking to maintain a healthy lif
    ```bash
    git clone https://github.com/shanshee/PrepPilot.git
    cd PrepPilot
-   
+   ```
+
 2. Install the dependencies:
 
    ```bash
    npm install
+   ```
 
-3. Create a .env file in the root directory and add your API keys and other environment variables. Example:
+3. Create a `.env` file in the root directory and add your API keys and other environment variables. Example:
 
-  
-    ```plaintext
-   Copy code
+   ```plaintext
    OPENAI_API_KEY=your_openai_api_key
+   ```
 
-4.Start the development server:
+4. Start the development server:
 
    ```bash
    npm start
+   ```
 
-5. Open your browser and navigate to http://localhost:3000 to view the application.
+5. Open your browser and navigate to [http://localhost:3000](http://localhost:3000) to view the application.
 
-Usage
-Enter your personal information such as weight, height, age, and exercise levels.
-Select your dietary preferences and fitness goals.
-Generate a meal plan based on your input.
-View the suggested recipes and grocery list.
-Follow the meal prepping guide to prepare your meals for the week.
-Contributing
+## Usage
+
+1. Enter your personal information such as weight, height, age, and exercise levels.
+2. Select your dietary preferences and fitness goals.
+3. Generate a meal plan based on your input.
+4. View the suggested recipes and grocery list.
+5. Follow the meal prepping guide to prepare your meals for the week.
+
+## Contributing
+
 We welcome contributions to improve PrepPilot! If you have any suggestions, bug reports, or feature requests, please open an issue or submit a pull request.
 
-Steps to Contribute
-Fork the repository.
+### Steps to Contribute
 
-Create a new branch:
+1. Fork the repository.
+2. Create a new branch:
 
-bash
-Copy code
-git checkout -b feature/your-feature-name
-Make your changes and commit them:
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
 
-bash
-Copy code
-git commit -m "Add your commit message here"
-Push to the branch:
+3. Make your changes and commit them:
 
-bash
-Copy code
-git push origin feature/your-feature-name
-Open a pull request on GitHub.
+   ```bash
+   git commit -m "Add your commit message here"
+   ```
 
-License
-This project is licensed under the MIT License. See the LICENSE file for more details.
+4. Push to the branch:
 
-Contact
+   ```bash
+   git push origin feature/your-feature-name
+   ```
+
+5. Open a pull request on GitHub.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+## Contact
+
 For any questions or inquiries, please contact us at slondelle@yahoo.com.
 
+---
+
 Thank you for using PrepPilot! Happy meal prepping!
+```
+
+You can copy and paste this directly into your `README.md` file. Let me know if you need any further adjustments!
