@@ -20,7 +20,7 @@ PrepPilot serves as a valuable tool for anyone looking to maintain a healthy lif
 
 ## Website Link
 
-mealprepilot.com
+[mealprepilot.com](https://mealprepilot.com/)
 
 ## Getting Started
 
