@@ -105,7 +105,12 @@ For any questions or inquiries, please contact us at slondelle@yahoo.com.
 ---
 
 Thank you for using PrepPilot! Happy meal prepping!
-```
+
+<img width="1509" alt="Screenshot 2024-05-12 at 1 44 56 PM" src="https://github.com/shanshee/PrepPilot/assets/119387308/96fa8bb2-b3a8-4fae-bd6f-49bf430f054f">
+<img width="1488" alt="Screenshot 2024-05-12 at 1 46 13 PM" src="https://github.com/shanshee/PrepPilot/assets/119387308/70257a0c-cbbc-45f4-bbbd-5ba1d9d93417">
+<img width="1496" alt="Screenshot 2024-05-12 at 1 45 09 PM" src="https://github.com/shanshee/PrepPilot/assets/119387308/ceddde8f-a548-4ac1-837d-b1414401994f">
+<img width="1510" alt="Screenshot 2024-05-12 at 1 46 39 PM" src="https://github.com/shanshee/PrepPilot/assets/119387308/1f2d86bf-20ce-4665-8e17-b5a82fef0567">
+
 
 
 
