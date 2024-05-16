@@ -20,7 +20,7 @@ PrepPilot serves as a valuable tool for anyone looking to maintain a healthy lif
 
 ## Website Link
 
-[PrepPilot Website](https://github.com/shanshee/PrepPilot)
+mealprepilot.com
 
 ## Getting Started
 
@@ -106,6 +106,6 @@ For any questions or inquiries, please contact us at slondelle@yahoo.com.
 
 Thank you for using PrepPilot! Happy meal prepping!
 ```
-<img width="1509" alt="Screenshot 2024-05-12 at 1 44 56 PM" src="https://github.com/shanshee/PrepPilot/assets/119387308/692be771-b256-4a0d-be16-60d860b07f98">
+
 
 
