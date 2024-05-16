@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>PrepPilot - Calories</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Lora:wght@600;700&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container fixed-top px-0 wow fadeIn" data-wow-delay="0.1s">
+        <div class="top-bar row gx-0 align-items-center d-none d-lg-flex">
+            <div class="col-lg-6 px-5 text-start">
+                <small><i class="fa fa-map-marker-alt me-2"></i>123 Street, Xyz, USA</small>
+                <small class="ms-4"><i class="fa fa-envelope me-2"></i>xyz@example.com</small>
+            </div>
+            <div class="col-lg-6 px-5 text-end">
+                <small>Follow us:</small>
+                <a class="text-body ms-3" href=""><i class="fab fa-facebook-f"></i></a>
+                <a class="text-body ms-3" href=""><i class="fab fa-twitter"></i></a>
+                <a class="text-body ms-3" href=""><i class="fab fa-linkedin-in"></i></a>
+                <a class="text-body ms-3" href=""><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-expand-lg navbar-light py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+            <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
+                <h1 class="fw-bold text-primary m-0">Prep<span class="text-secondary">Pilot</span></h1>
+            </a>
+            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto p-4 p-lg-0">
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                    <a href="faq.html" class="nav-item nav-link">Faq</a>
+                </div>
+         
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 wow fadeIn" data-wow-delay="0.1s">
+        <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="img/carousel-1.jpg" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-start">
+                                <div class="col-lg-7">
+                                    <h1 class="display-2 animated slideInDown">Welcome to Prep<span class="text-secondary">Pilot</span></h1>
+                                    <p class="text-muted mb-5 animated slideInDown">Welcomes users and briefly explains the app’s functionality.</p>
+                                    <a href="#knowYourDiet" class="btn btn-lg btn-primary rounded-pill py-sm-3 px-sm-5">Start Planning</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+
+    <!-- Know Your Diet Start -->
+    <div class="container-fluid bg-light bg-icon py-6" >
+        <div class="container">
+            <div class="section-header text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <h1 class="display-5 mb-3" >Put your diet on PrepPilot</h1>
+                <p>Eat This Much creates personalized meal plans based on your food preferences, budget, and schedule.
+                     Reach your diet and nutritional goals with our calorie calculator, weekly meal plans, grocery lists and more.
+                    <strong>Create your meal plan right here in seconds.</strong> 
+                </p>
+            </div>
+            <div id="knowYourDiet" class="text-center mx-auto my-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <h3 class="mb-3">Ready to give it a shot? Let us know your diet.</h3>
+            </div>
+
+            <div class="bg-light px-5 py-5" style="border-radius: 12px;box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;">
+            <div class="row g-4">
+                <div class="col-lg-2 col-md-2 wow fadeInUp meal-type active" data-wow-delay="0.1s"  data-value="Anything">
+                    <a href="javascript:void(0);">
+						<div class="bg-white text-center p-4 p-xl-3">
+							<img class="img-fluid mb-2 w-50" src="img/icon-1.png" alt="">
+							<h6 class="mb-3">Anything</h6>
+						</div>
+					</a>
+                </div>
+                <div class="col-lg-2 col-md-2 wow fadeInUp meal-type" data-wow-delay="0.3s"  data-value="Paleo">
+                    <a href="javascript:void(0);">
+                        <div class="bg-white text-center p-4 p-xl-3">
+                            <img class="img-fluid mb-2 w-50" src="img/icon-2.png" alt="">
+							<h6 class="mb-3">Paleo</h6>
+						</div>
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-2 wow fadeInUp meal-type" data-wow-delay="0.5s"  data-value="Vegetarian">
+                    <a href="javascript:void(0);">
+                        <div class="bg-white text-center p-4 p-xl-3">
+                            <img class="img-fluid mb-2 w-50" src="img/icon-3.png" alt="">
+							<h6 class="mb-3">Vegetarian</h6>
+						</div>
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-2 wow fadeInUp meal-type" data-wow-delay="0.5s"  data-value="Vegan">
+                    <a href="javascript:void(0);">
+                        <div class="bg-white text-center p-4 p-xl-3">
+                            <img class="img-fluid mb-2 w-50" src="img/icon-3.png" alt="">
+							<h6 class="mb-3">Vegan</h6>
+						</div>
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-2 wow fadeInUp meal-type" data-wow-delay="0.5s" data-value="Ketogenic">
+                    <a href="javascript:void(0);">
+                        <div class="bg-white text-center p-4 p-xl-3">
+                            <img class="img-fluid mb-2 w-50" src="img/icon-3.png" alt="">
+							<h6 class="mb-3">Ketogenic</h6>
+						</div>
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-2 wow fadeInUp meal-type" data-wow-delay="0.5s" data-value="mediterranean">
+                    <a href="javascript:void(0);">
+                        <div class="bg-white text-center p-4 p-xl-3">
+                            <img class="img-fluid mb-2 w-50" src="img/icon-3.png" alt="">
+							<h6 class="mb-3">Mediterranean</h6>
+						</div>
+                    </a>
+                </div>
+            </div>
+          
+                <div class="row g-3 my-5">
+                    <div class="col-12">
+                        <h6>I want to eat</h6><div class="form-floating position-relative mx-auto">
+                            <input type="number" min="0" max="20000" step="100" placeholder="####" value="400" class="form-control calorie-input" id="cal_input">
+                            <label for="calories">Calories</label>
+                            <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2 not-sure-btn nutrition_calculator_modal" data-bs-toggle="modal" data-bs-target="#nutrition_calculator_modal"><i class="fa fa-calculator"></i> Not sure?</button>
+                        </div>
+
+                       
+                    </div>
+                    <div class="col-12">
+                      <h6>In</h6><div class="form-floating">
+                         
+                            <select class="form-control num_meals_selector" id="num_meals_selector">
+                                <option value="1">1 meal
+                                </option>
+                                <option value="2">2 meals
+                                </option>
+                                <option value="3">3 meals
+                                </option>
+                                <option value="4" selected="">4 meals
+                                </option>
+                                <option value="5">5 meals
+                                </option>
+                                <option value="6">6 meals
+                                </option>
+                                <option value="7">7 meals
+                                </option>
+                                <option value="8">8 meals
+                                </option>
+                                <option value="9">9 meals
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-12 text-center">
+                        <button class="btn btn-primary rounded-pill py-3 px-5 generate_btn">Generate</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+<div class="row py-5">
+    <div class="col-md-6">
+        <h5>Today's Meal Plan (<a href="#no" data-bs-toggle="modal" data-bs-target="#grocery_list_modal"><small>Your Grocery List</small></a>)</h5>
+    </div>
+    <div class="col-md-6">
+        <h5>Regenerate <a href="#no" class="regenerate_btn"><i class="fa fa-redo"></i></a></h5>
+    </div>
+</div>
+			
+			<div class="row add-meals">
+				
+			</div>
+        </div>
+    </div>
+    <!-- Know Your Diet End -->
+
+ 
+
+    <!-- Testimonial Start -->
+    <div class="container-fluid py-6 mb-5">
+        <div class="container">
+            <div class="section-header text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <h1 class="display-5 mb-3">Customer Review</h1>
+                <p>Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed rebum vero dolor duo.</p>
+            </div>
+            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+                <div class="testimonial-item position-relative bg-white p-5 mt-4">
+                    <i class="fa fa-quote-left fa-3x text-primary position-absolute top-0 start-0 mt-n4 ms-5"></i>
+                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+                    <div class="d-flex align-items-center">
+                        <img class="flex-shrink-0 rounded-circle" src="img/testimonial-1.jpg" alt="">
+                        <div class="ms-3">
+                            <h5 class="mb-1">Client Name</h5>
+                            <span>Profession</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item position-relative bg-white p-5 mt-4">
+                    <i class="fa fa-quote-left fa-3x text-primary position-absolute top-0 start-0 mt-n4 ms-5"></i>
+                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+                    <div class="d-flex align-items-center">
+                        <img class="flex-shrink-0 rounded-circle" src="img/testimonial-2.jpg" alt="">
+                        <div class="ms-3">
+                            <h5 class="mb-1">Client Name</h5>
+                            <span>Profession</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item position-relative bg-white p-5 mt-4">
+                    <i class="fa fa-quote-left fa-3x text-primary position-absolute top-0 start-0 mt-n4 ms-5"></i>
+                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+                    <div class="d-flex align-items-center">
+                        <img class="flex-shrink-0 rounded-circle" src="img/testimonial-3.jpg" alt="">
+                        <div class="ms-3">
+                            <h5 class="mb-1">Client Name</h5>
+                            <span>Profession</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item position-relative bg-white p-5 mt-4">
+                    <i class="fa fa-quote-left fa-3x text-primary position-absolute top-0 start-0 mt-n4 ms-5"></i>
+                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+                    <div class="d-flex align-items-center">
+                        <img class="flex-shrink-0 rounded-circle" src="img/testimonial-4.jpg" alt="">
+                        <div class="ms-3">
+                            <h5 class="mb-1">Client Name</h5>
+                            <span>Profession</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+
+  <!-- Footer Start -->
+  <div class="container-fluid bg-dark footer pt-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-lg-3 col-md-6">
+                <h1 class="fw-bold text-primary mb-4">Prep<span class="text-secondary">Pilot</span></h1>
+                <p>Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita</p>
+              
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-light mb-4">Address</h4>
+                <p><i class="fa fa-map-marker-alt me-3"></i>123 Street, Xyz, USA</p>
+                <p><i class="fa fa-phone-alt me-3"></i>+000 000 00000</p>
+                <p><i class="fa fa-envelope me-3"></i>info@example.com</p>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-light mb-4">Quick Links</h4>
+                <a class="btn btn-link" href="">About Us</a>
+                <a class="btn btn-link" href="">Our Services</a>
+                <a class="btn btn-link" href="">Terms & Condition</a>
+                <a class="btn btn-link" href="">Support</a>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-light mb-4">Follow Us</h4>
+                <div class="d-flex pt-2">
+                    <a class="btn btn-square btn-outline-light rounded-circle me-1" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-square btn-outline-light rounded-circle me-1" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-square btn-outline-light rounded-circle me-1" href=""><i class="fab fa-youtube"></i></a>
+                    <a class="btn btn-square btn-outline-light rounded-circle me-0" href=""><i class="fab fa-linkedin-in"></i></a>
+                </div>
+              
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; <a href="#">PrepPilot</a>, All Right Reserved.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+	
+	
+<!-- modals -->
+	
+	
+<div class="modal fade" id="grocery_list_modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="grocery_list_modalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Grocery List</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+		  <div class="row py-3">
+              <div class="col-md-4 grocery_list_col">
+				  <p class="mb-1"><small>No Grocery List...</small></p>
+              </div>
+		  </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>	
+<!-- modals End -->			  
+		  
+		  
+	
+<div class="modal fade" id="nutrition_calculator_modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="nutrition_calculator_modalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Nutrition calculator</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="calculator_form">
+          <form class="form-horizontal condensed_form" id="calculator_form">
+            <fieldset>
+              <div class="col-12 alert alert-info text-small" role="alert">
+                <p> This calculator uses a standard BMR equation (the Mifflin-St Jeor formula) to estimate your Calorie
+                  needs. We also make some rough macronutrient suggestions, but you're free to
+                  completely customize these values when you create a free account. </p>
+                <p class="pb-0 mb-0"> <strong>Keep in mind that this is a general estimate.</strong> For best results, consult your healthcare
+                  provider. </p>
+              </div>
+              <div class="form-group row">
+                <label for="current-preset-diet" class="col-sm-4 col-form-label">Current diet type</label>
+                <div class="col-sm-8" style="margin-top: 8px" id="current-preset-diet"> <span> anything </span> </div>
+              </div>
+              <div class="form-group row">
+                <label for="goal-radio" class="col-12 col-sm-4 col-form-label">I want to</label>
+                <div class="col-12 col-sm-8">
+                  <div class="row">
+                    <div class="goal_help_tooltip left_form_tooltip">
+						<div class="custom-tooltip" data-original-title="" data-bs-html="true" title='<p>The calorie target we suggest will be based on your goals. If you select "Lose", the target will be 20% below your maintenance calories, or if you select "Gain", the target calories will be 15% above maintenance.</p><p>You can further adjust your targets by setting a specific weight goal(below), or ignore our suggestions and set your own custom targets in the Nutrician Profile</p>' data-bs-toggle="tooltip" data-bs-placement="right">
+                        <i class="fa fa-question-circle" aria-hidden="true"></i>
+						</div>
+                    </div>
+					  
+                    <div class="col-12 three-segment-radio" data-editors="goal" id="goal-radio">
+                       <div class="btn-group" role="group">
+                          <input type="radio" class="btn-check" name="goal" id="goal1" autocomplete="off" value="L" checked>
+                          <label class="btn btn-outline-primary" for="goal1">Lose weight</label>
+
+                          <input type="radio" class="btn-check" name="goal" id="goal2" autocomplete="off" value="M">
+                          <label class="btn btn-outline-primary" for="goal2">Maintain</label>
+
+                          <input type="radio" class="btn-check" name="goal" id="goal3" autocomplete="off" value="G">
+                          <label class="btn btn-outline-primary" for="goal3">Build muscle</label>
+                       </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+				
+              <div class="form-group row">
+                <label for="units-radio" class="col-12 col-sm-4 col-form-label">Preferred units</label>
+                <div class="col-12 col-sm-8 two-segment-radio" data-editors="units" id="units-radio">
+                  <div class="btn-group" role="group">
+                    <input type="radio" class="btn-check" name="units" id="units1" autocomplete="off" value="I">
+                    <label class="btn btn-outline-primary" for="units1">U.S. Standard</label>
+						
+                    <input type="radio" class="btn-check" name="units" id="units2" autocomplete="off" value="M" checked>
+                    <label class="btn btn-outline-primary" for="units2">Metric</label>
+                   </div>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="gender-radio" class="col-12 col-sm-4 col-form-label">I am</label>
+                <div class="col-12 col-sm-8 two-segment-radio" data-editors="gender" id="gender-radio">
+				  <div class="btn-group" role="group">
+                    <input type="radio" class="btn-check" name="gender" id="gender1" autocomplete="off" value="M" checked>
+                    <label class="btn btn-outline-primary" for="gender1">Male</label>
+						
+                    <input type="radio" class="btn-check" name="gender" id="gender2" autocomplete="off" value="F">
+                    <label class="btn btn-outline-primary" for="gender2">Female</label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="height-inputs" class="col-12 col-sm-4 col-form-label">Height</label>
+                <div class="inline_block col-12 col-sm-8" id="height-inputs">
+                  <div class="row">
+                    <div class="col-6 imperial_inputs" style="display: none;">
+                      <input id="height-primary" name="height_primary" class="form-control inline_block" type="text">
+                      <label for="height-primary" class="imperial_inputs signup_input_label"> ft</label>
+                    </div>
+                    <div class="col-6">
+                      <input id="height-secondary" name="height_secondary" class="form-control inline_block" type="text">
+                      <label for="height-secondary" class="imperial_inputs signup_input_label" style="display: none;"> in</label>
+                      <label for="height-secondary" class="metric_inputs signup_input_label"> cm</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="weight-input" class="col-12 col-sm-4 col-form-label">Weight</label>
+                <div class="inline_block col-12 col-sm-4" id="weight-input">
+                  <input id="weight" name="weight" class="form-control inline_block" type="text">
+                  <label for="weight" class="signup_input_label imperial_inputs" style="display: none;"> lbs </label>
+                  <label for="weight" class="signup_input_label metric_inputs"> kgs </label>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="age" class="col-12 col-sm-4 col-form-label">Age</label>
+                <div class="col-12 col-sm-4" id="age-input">
+                  <input name="age" id="age" class="form-control inline_block" type="text">
+                  <label for="age" class="signup_input_label"> years </label>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="bodyfat-radio" class="col-12 col-sm-4 col-form-label"> Bodyfat </label>
+                <div class="col-12 col-sm-8">
+                  <div class="row">
+                    
+					<div class="goal_help_tooltip left_form_tooltip">
+						<div class="custom-tooltip" data-original-title="" data-bs-html="true" title="<p>Bofy fat percentage is the total mass of fat divided by total body mass. The typical bidyfat percentage is 18-24% for an average male 25-31% and for an avergae female according to wikipedia.</p><p>If you don't know yours it's not a big deal - we only use it to estimate your lean body mass and chnage the minimum amount of the protein recommended is the nutrition calculator.</p>" data-bs-toggle="tooltip" data-bs-placement="right">
+                        <i class="fa fa-question-circle" aria-hidden="true"></i>
+						</div>
+                    </div>  
+					  
+                    <div data-editors="bodyfat" id="bodyfat-radio" class="col-12 three-segment-radio">
+						
+					  <div class="btn-group" role="group">
+						<input type="radio" class="btn-check" name="bodyfat" id="bodyfat1" autocomplete="off" value="10" checked>
+						<label class="btn btn-outline-primary" for="bodyfat1">Low</label>
+
+						<input type="radio" class="btn-check" name="bodyfat" id="bodyfat2" autocomplete="off" value="20">
+						<label class="btn btn-outline-primary" for="bodyfat2">Medium</label>
+						  
+						<input type="radio" class="btn-check" name="bodyfat" id="bodyfat3" autocomplete="off" value="30">
+						<label class="btn btn-outline-primary" for="bodyfat3">High</label>
+					  </div>
+                    </div>
+                    <div class="male_bfat_percent col-12">
+                      <div class="bfat_percent">under 14%</div>
+                      <div class="bfat_percent">14% to 22%</div>
+                      <div class="bfat_percent">above 22%</div>
+                    </div>
+                    <div class="female_bfat_percent col-12" style="display: none;">
+                      <div class="bfat_percent">under 22%</div>
+                      <div class="bfat_percent">22% to 35%</div>
+                      <div class="bfat_percent">above 35%</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="activity_level_dropdown" class="col-12 col-sm-4 col-form-label">Activity level</label>
+                <div class="col-12 col-sm-8">
+                  <div class="row">
+				  	<div class="goal_help_tooltip left_form_tooltip">
+                        <div class="custom-tooltip" data-original-title="" data-bs-html="true" title="<strong>sedentary</strong><p>Little or no exercise and desk top job</p> <strong>Lightly Active</strong> <p>Light daily activity & some exercise 1-3 days a week</p> <strong>Moderately Active</strong> <p>Moderately active daily life & exercise 3-5 days a week</p> <strong>Very Active</strong> <p>Physically demanding lifestyle & and hard exercise or sports 6-7 days a week</p> <strong>Extremely Active</strong> <p>Hard daily exercise or sports and physical job</p>" data-bs-toggle="tooltip" data-bs-placement="right">
+                        <i class="fa fa-question-circle" aria-hidden="true"></i>
+                        </div>
+                    </div> 	
+					  
+                    <div class="inline_block" style="width: 100%;" data-editors="activity_level" id="activity_level_dropdown">
+                      <select id="c59_activity_level" class="form-control" name="activity_level">
+                        <option value="1.2">Sedentary</option>
+                        <option selected="" value="1.375">Lightly Active</option>
+                        <option value="1.55">Moderately Active</option>
+                        <option value="1.725">Very Active</option>
+                        <option value="1.9">Extremely Active</option>
+                      </select>
+                    </div>
+			      </div>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="use_weight_goal" style="font-weight: normal" class="col-12 col-sm-4 col-form-label"> Set a weight goal? </label>
+                <div class="col-12 col-sm-8">
+                  <div class="two-segment-radio" id="use_weight_goal" data-editors="use_weight_goal">
+					  
+					<div class="btn-group" role="group">
+                      <input type="radio" class="btn-check" name="use_weight_goal" id="use_weight_goal1" autocomplete="off" value="false" checked>
+                      <label class="btn btn-outline-primary" for="use_weight_goal1">No thanks</label>
+
+                      <input type="radio" class="btn-check" name="use_weight_goal" id="use_weight_goal2" autocomplete="off" value="true">
+                      <label class="btn btn-outline-primary" for="use_weight_goal2">Yeah let's do it!</label>
+                    </div>  
+					 
+                  </div>
+                </div>
+              </div>
+              <div class="weight_goal_form">
+                <div class="form-group row">
+                  <label for="weight_field" style="font-weight: normal" class="col-12 col-sm-4 col-form-label"> Enter your goal weight </label>
+                  <div class="col-12 col-sm-4 weight_goal">
+                    <div data-editors="weight_goal">
+                      <input id="c59_weight_goal" class="form-control" name="weight_goal" type="number" step="any" min="0">
+                    </div>
+                    <div class="signup_input_label weight_units">kgs</div>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="weight_field" style="font-weight: normal" class="col-12 col-sm-4 col-form-label"> Weight change rate</label>
+                  <div class="col-12 col-sm-6">
+                    <div class="inline-block gain_lose_label">Lose</div>
+                    <div class="weight_input_field" data-editors="weight_goal_weekly_rate">
+                      <input id="c59_weight_goal_weekly_rate" class="form-control" name="weight_goal_weekly_rate" step="0.1" type="number" min="0">
+                    </div>
+                    <div class="weight_units">kgs</div>
+                    per week </div>
+                </div>
+                <small class="col-12 col-sm-6 offset-sm-4 text-muted expected_weight_goal_date small_bottom_spacer" style="display: none;">You should reach your goal in May 2024.</small>
+                <div class="weight_goal_bmi_warning alert alert-warning" style="display: none;"> </div>
+                <div class="weight_goal_weekly_rate_warning alert alert-warning" style="display: none;">The CDC and health professionals strongly advise against weight changes of more than 0.9 kgs a week.</div>
+                <div class="weight_goal_update_error alert alert-danger" style="display: none;"> </div>
+                <div class="weight_goal_date_update_error alert alert-danger" style="display: none;"> </div>
+              </div>
+              <div class="col-12 col-sm-12 top_spacer bottom_spacer text-center">
+                <button class="btn btn-lg btn-primary rounded-pill py-sm-3 px-sm-5" id="calculate_button"><i class="fa fa-calculator" aria-hidden="true"></i> Calculate </button>
+              </div>
+              <div class="low_calorie_warning alert alert-warning" style="display: none;"> </div>
+            </fieldset>
+          </form>
+        </div>
+        <div class="macro_recommendation">
+          <table class="table">
+            <thead>
+              <tr>
+                <th><strong>Suggested Calories</strong></th>
+                <th><strong>Carbs</strong></th>
+                <th><strong>Fat</strong></th>
+                <th><strong>Protein</strong></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="suggested_calories"></td>
+                <td class="suggested_carbs"></td>
+                <td class="suggested_fats"></td>
+                <td class="suggested_proteins"></td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="text-center">
+            <button class="btn btn-lg btn-primary rounded-pill py-sm-3 px-sm-5 use_calculated_settings"> <i class="fa fa-check" aria-hidden="true"></i> Apply these settings </button>
+          </div>
+          <br>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>	
+<!-- modals End -->	
+	
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+	
+	<Script>
+		$(function () {
+            $('[data-bs-toggle="tooltip"]').tooltip();
+        });
+	</Script>
+</body>
+
+</html>
